@@ -1,0 +1,111 @@
+body {
+  background-color: #f3f2f2;
+  margin: 0;
+  max-height: 100vh;
+  color: #3b3b3b;
+  font-family: 'Odibee Sans', cursive;
+}
+
+header {
+  background-color: #a5b3a1;
+  display: flex;
+  justify-content: space-between;
+}
+
+h1 {
+  margin: 0;
+  margin-left: 50px;
+  padding: 20px;
+}
+
+.mainField {
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  width: 80vw;
+  height: 60vh;
+  margin: auto;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+textarea {
+  resize: none;
+  width: 90%;
+  height: 40%;
+  margin: 32px 5% 0px 5%;
+  border: none;
+  /* outline: none;  フォーカスしたときの枠*/
+  background-color: #e0e0e0;
+}
+
+textarea:focus {
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+
+#rawText {
+  color: #aca9a9;
+}
+
+#translatedText {
+  font-weight: bold;
+}
+
+#downloadBtn, input[type="button"]{
+  background-color: #a5b3a1;
+  padding: 1rem 4rem;
+  font-weight: bold;
+}
+
+#transBtn{
+  background-color: #a5b3a1;
+  padding: 1rem 4rem;
+  font-weight: bold;
+}
+
+.parentBtn {
+  padding: 30px;
+  width: 80vw;
+  margin: auto;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+#saveBtn {
+  display: block;
+  margin-left: auto;
+  margin-right: 5%;
+  margin-top: 10px;
+}
+
+
+/*まずはお決まりのボックスサイズ算出をborer-boxに */
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+
+a.btn {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.5;
+  display: inline-block;
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.3s;
+  text-align: center;
+  letter-spacing: 0.1em;
+  border-radius: 100vh;
+  border-bottom: 5px solid #8e9c8b;
+}
+
+a.btn:hover {
+  margin-top: 3px;
+  border-bottom: 1px solid #4d554b;
+}
+

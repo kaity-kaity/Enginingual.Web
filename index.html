@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>エンジニンガル</title>
+  <meta name="description" content="エンジニアと他職種との専門用語翻訳ツールです．">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./main.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Odibee+Sans&display=swap" rel="stylesheet">
+  <script src="./kuromoji.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="./main.js" defer></script>
+  <script src="./debug.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <h1>Enginingual.com 🔎</h1>
+    <div style="display: flex;">
+      <input id="debugIP" type="text" value="localhost:3000">
+      <h1 id="debugBurger">🍔</h1>
+    </div>
+  </header>
+  <div class="parentBtn">
+    <a id="transBtn" class="btn" type="button">START🎙</a>
+  </div>
+  <div class="mainField">
+    <textarea id="translatedText"></textarea>
+    <textarea id="rawText"></textarea>
+    <a id="downloadBtn" class="btn" download='翻訳議事録.txt'>SAVE📄</a>
+  </div>
+</body>
